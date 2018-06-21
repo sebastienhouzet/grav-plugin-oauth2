@@ -1,0 +1,66 @@
+name: OAuth2
+version: 1.0.0
+description: Access on Front Office or Admin only after login with OAuth2.0
+icon: plug
+author:
+  name: Sébastien Houzet
+  email: sebastien@yoozio.com
+  url: https://www.yoozio.com
+homepage: https://github.com/sebastienhouzet/grav-plugin-oauth2
+demo: 
+keywords: grav, plugin, oauth2, login, authentication, admin, security
+bugs: https://github.com/sebastienhouzet/grav-plugin-oauth2/issues
+docs: https://github.com/sebastienhouzet/grav-plugin-oauth2/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    admin:
+      type: toggle
+      label: Enabled on Admin
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    clientId:
+      type: text
+      label: clientId
+      help: clientId
+    clientSecret:
+      type: text
+      label: clientSecret
+      help: clientSecret
+    redirectUri:
+      type: text
+      label: redirectUri
+      help: redirectUri
+    urlAuthorize:
+      type: text
+      label: urlAuthorize
+      help: urlAuthorize
+    urlAccessToken:
+      type: text
+      label: urlAccessToken
+      help: urlAccessToken
+    urlResourceOwnerDetails:
+      type: text
+      label: urlResourceOwnerDetails
+      help: urlResourceOwnerDetails
+    scopes:
+      type: text
+      label: scopes
+      help: scopes

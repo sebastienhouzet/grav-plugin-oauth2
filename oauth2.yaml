@@ -1,0 +1,8 @@
+enabled: false
+clientId: 'clientId'
+clientSecret: 'clientSecret'
+redirectUri: 'http://redirectUri'
+urlAuthorize: 'https://urlAuthorize/as/authorization.oauth2'
+urlAccessToken: 'https://urlAccessToken/as/token.oauth2'
+urlResourceOwnerDetails: 'https://urlResourceOwnerDetails/idp/userinfo.openid'
+scopes: 'openid profile email'
